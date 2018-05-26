@@ -5,7 +5,7 @@ import logging.handlers
 import argparse
 import sys
 import time  # this is only being used as part of the example
-import sumpMonitor
+import deviceMonitor
 
 import paho.mqtt.client as mqtt
 import time
@@ -13,7 +13,7 @@ import json
 
  
 # Deafults
-LOG_FILENAME = "/tmp/sump_monitor_service.log"
+LOG_FILENAME = "/tmp/device-monitor-service.log"
 LOG_LEVEL = logging.INFO  # Could be e.g. "DEBUG" or "WARNING"
  
 # Define and parse command line arguments
