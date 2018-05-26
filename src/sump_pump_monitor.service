@@ -1,9 +1,0 @@
-[Unit]
-Description=Sump Pump Monitor
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/python /home/pi/sump_pump_monitor/src/sump_monitor_service.py
-
-[Install]
-WantedBy=multi-user.target

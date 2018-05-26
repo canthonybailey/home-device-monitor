@@ -1,0 +1,9 @@
+[Unit]
+Description=Home Device Monitor
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/device_monitor/src/device-monitor-service.py
+
+[Install]
+WantedBy=multi-user.target
