@@ -4,6 +4,7 @@ Dependencies:
 Python: 
   pip install paho-mqtt       // mqtt libraries
   sudo pip install paho-mqtt  // systemd service runs as root, need to ensure root has access to python libraries
+  sudo /usr/bin/python3 -m pip install paho  // need to install seperately if running python3
 
 Service definition needs to be in 
   ln ~/sump_pump_monitor/src/sump_pump_monitor.service /lib/systemd/system/sump_pump_monitor.service
