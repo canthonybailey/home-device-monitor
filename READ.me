@@ -6,9 +6,9 @@ Python:
   sudo pip install paho-mqtt  // systemd service runs as root, need to ensure root has access to python libraries
   sudo /usr/bin/python3 -m pip install paho-mqtt  // need to install seperately if running python3
 
-Service definition needs to be in 
-  ln ~/sump_pump_monitor/src/sump_pump_monitor.service /lib/systemd/system/sump_pump_monitor.service
+Service definition needs to be setup in systemd services (beware inconsistent use of - and _)
+  sudo ln ~/home-device-monitor/src/device-monitor-service-definition.service /etc/systemd/system/home_device_monitor.service
 
   systemctl daemon-reload
-  systemctl start|stop|restart sump_pump_monitor
+  systemctl start|stop|restart home_device_monitor
   systemctl status sump_pump_monitor
